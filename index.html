@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>form</title>
+    <link rel="stylesheet" href="./cs.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="cont">
+      <h1 class="text-capitalize text-center my-5">
+        <i class="fas fa-camera text-success"></i>form
+        <span class="text-primary">Received</span>
+      </h1>
+      <form id="co">
+        <div class="cop">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="cop">
+          <label for="address">Address</label>
+          <input type="text" id="address" />
+        </div>
+        <div class="cop">
+          <label for="id">ID#</label>
+          <input type="text" id="id" />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary btn-block my-4"
+          value="Add"
+        />
+      </form>
+      <table class="table table-active mt-5">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>ID#</th>
+            <th>||</th>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+    <script src="./js.js"></script>
+  </body>
+</html>

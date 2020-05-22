@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#co {
+  background: cadetblue;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 2px 4px 5px 0 rgba(66, 44, 22, 0.6), 0 4px 4px rgb(222, 22, 123);
+}
+i {
+  box-shadow: 2px 4px 5px 0 rgba(33, 22, 111, 0.6), 0 4px 4px rgb(222, 22, 123);
+}
+#name,
+#address,
+#id {
+  outline: none;
+  border: 1px solid sandybrown;
+  border-radius: 5px;
+  background: orange;
+  color: greenyellow;
+}
+th,
+td {
+  border: 1px solid olive;
+  border-top: 1px solid olive;
+  color: olivedrab;
+}
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1rem;
+  min-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 2px 0 5px 0 goldenrod;
+  border-bottom: 1px solid black;
+}
+thead tr {
+  background-color: greenyellow;
+  color: grey;
+  font-size: 1rem;
+
+  text-align: left;
+  font-weight: bold;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: antiquewhite;
+}
+table tbody tr {
+  border-bottom: 1px solid rosybrown;
+  text-transform: capitalize;
+}
+table .th-sort-asc::after {
+  content: "\25b4";
+}
+table .th-sort-desc::after {
+  content: "\25be";
+}
+table .th-sort-asc::after,
+table .th-sort-desc::after {
+  margin-left: 5px;
+}
